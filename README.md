@@ -29,15 +29,15 @@ Currently, two official plugins are available:
 10. useEffect
 11. useRefs
 12. GET Data API
-13.
+13. Post Data API
 
 <br />
+
 ## Step to Start Project
 
-1. `git clone https://github.com/yuliantocode93/sample-fullstack-simple-mern.git`
-2. `cd e-comerce-backend`
+1. `git clone https://github.com/yuliantocode93/sample-react-fakestoreapi-1.git`
+2. `cd sample-react-fakestoreapi-1`
 3. `npm i`
-4. `npm run data:import`
-5. `npm run dev`
+4. `npm run dev`
 
 #### If you like project then feel free to give Star 😅
