@@ -30,9 +30,9 @@ Currently, two official plugins are available:
 13. Post Data API
 14. Custom Hooks
 15. Dynamic Routing
+16. Redux - State Management
 
 <br />
-
 ## Step to Start Project
 
 1. `git clone https://github.com/yuliantocode93/sample-react-fakestoreapi-1.git`
