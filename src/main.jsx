@@ -11,13 +11,9 @@ import DetailProductPage from "./Pages/detailProduct.jsx";
 import { Provider } from "react-redux";
 import store from "./redux/store.js";
 import NavBar from "./components/Layouts/Navbar.jsx";
+import DarkModeContextProvider from "./context/DarkMode.jsx";
 
 const router = createBrowserRouter([
-  // {
-  //   path: "/",
-  //   element: <div>Hello World</div>,
-  //   errorElement: <ErrorPage />,
-  // },
   {
     path: "/",
     element: <LoginPage />,
@@ -43,8 +39,9 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Provider store={store}>
-      <NavBar />
-      <RouterProvider router={router} />
+      <DarkModeContextProvider>
+        <RouterProvider router={router} />
+      </DarkModeContextProvider>
     </Provider>
   </React.StrictMode>
 );
