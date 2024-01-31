@@ -33,6 +33,7 @@ Currently, two official plugins are available:
 16. Redux - State Management
 17. Redux Toolkit
 18. useContext
+19. useReducer
 
 <br />
 
