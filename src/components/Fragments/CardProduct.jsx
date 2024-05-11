@@ -1,4 +1,7 @@
+import { Link } from "react-router-dom";
 import Button from "../Elements/Button/Index";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../../redux/slices/cartSlice";
 
 const CardProduct = (props) => {
   const { children } = props;
@@ -6,11 +9,11 @@ const CardProduct = (props) => {
 };
 
 const Header = (props) => {
-  const { image } = props;
+  const { image, id } = props;
   return (
-    <a href="#">
+    <Link to={`/product/${id}`}>
       <img src={image} alt="product" className="p-8 rounded-t-lg h-60 w-full object-cover" />
-    </a>
+    </Link>
   );
 };
 const Body = (props) => {
@@ -26,11 +29,12 @@ const Body = (props) => {
 };
 
 const Footer = (props) => {
-  const { price, handleAddToCart, id } = props;
+  const { price, id } = props;
+  const dispatch = useDispatch();
   return (
     <div className="flex items-center justify-between px-5 pb-5">
       <span className="text-xl font-bold text-white"> {Number(price).toLocaleString("us-US", { style: "currency", currency: "USD" })}</span>
-      <Button className="bg-blue-600" onClick={() => handleAddToCart(id)}>
+      <Button className="bg-blue-600" onClick={() => dispatch(addToCart({ id, qty: 1 }))}>
         Add To Cart
       </Button>
     </div>

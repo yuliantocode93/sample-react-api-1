@@ -1,5 +1,3 @@
-# ReactJS
-
 **Please run this project on local for checking.**
 
 ## Technology Which I Used
@@ -30,6 +28,12 @@ Currently, two official plugins are available:
 11. useRefs
 12. GET Data API
 13. Post Data API
+14. Custom Hooks
+15. Dynamic Routing
+16. Redux - State Management
+17. Redux Toolkit
+18. useContext
+19. useReducer
 
 <br />
 
