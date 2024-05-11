@@ -39,5 +39,5 @@ Currently, two official plugins are available:
 2. `cd sample-react-fakestoreapi-1`
 3. `npm i`
 4. `npm run dev`
-
-#### If you like project then feel free to give Star 😅
+5. `After running, open http://localhost:5173 in your browser.`
+6. `To Login Into Account from Fakestore API, input username: "johnd" and password: m38rmF$`.
